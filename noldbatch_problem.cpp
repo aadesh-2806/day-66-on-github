@@ -11,12 +11,12 @@ int main(){
 		if(prime[i]==true){
 			for(int s=i*i;s<=n;s+=i){
 				prime[s]=false;
-			}
+			} 
 		}
 	}
 	for(i=2;i<=n;i++){
 		if(prime[i]==true){
-			for(j=i+1;j<=n;j++){
+			for(j=i+1;j<=n;j++){ 
 				if(prime[j]==true){
 					break;
 				}
